@@ -5,6 +5,7 @@
     "license": "MIT",
     "require": {
         "illuminate/mail": "~6.1",
+        "Illuminate/Support/Arr": "~6.2",
         "guzzlehttp/guzzle": "~5.3|~6.2"
     },
     "require-dev": {

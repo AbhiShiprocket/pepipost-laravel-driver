@@ -290,9 +290,9 @@ class PepipostTransport extends Transport
 	    while($count<$this->numberOfRecipients)
 	    {
                 if (in_array($params, ['attributes','x-apiheader','x-apiheader_cc'])&& !in_array($params, ['recipient','recipient_cc'])) {
-		      array_set($data, 'personalizations.'.$count . '.' . $index  , $params);	
+		      Arr::set($data, 'personalizations.'.$count . '.' . $index  , $params);	
                 } else {
-			array_set($data, 'personalizations.'.$count . '.' . $index  , $params);
+		      Arr::set($data, 'personalizations.'.$count . '.' . $index  , $params);
                 }
 		$count++;
        	 }
